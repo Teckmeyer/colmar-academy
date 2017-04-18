@@ -1,1 +1,645 @@
+/* Universal Styles */
 
+html {
+  font-size: 16px;
+  font-family: 'Alegreya Sans', sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(255, 255, 255);
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Header */
+
+header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  max-height: 64px;
+  width: 100%;
+}
+
+.header-mobile {
+  display: none;
+}
+
+.logo {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
+  margin-left: 24px;
+  margin-right: 4px;
+}
+
+.logo img {
+  height: 45px;
+  width: 45px;
+}
+
+#logo-text{
+  font-size: 1.5em;
+  color: rgb (55,55,55);
+  font-weight: 700;
+}
+
+#logo-text span {
+  color: rgb(104, 104, 84);
+  font-weight: 400;
+}
+
+
+nav {
+  text-align: right;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  color: rgb(104, 104, 104);
+}
+
+.menu span {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: auto 16px;
+}
+
+.menu span a {
+  padding: auto 16px;
+  justify-content: space-between;
+  margin: auto 16px;
+  text-decoration: none;
+  color: rgb(104, 104, 104)
+  transition: color 500ms linear 0ms;
+}
+.menu span a:hover {
+    color: rgb(55, 55, 55);
+  }
+
+/* Banner */
+
+.banner {
+  background-color: rgb(240, 240, 240);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.banner img {
+  display: flex;
+  align-items: left;
+  max-width: 60%;
+  height: auto;
+  padding: 32px 40px 32px 24px;
+}
+
+.banner h1 {
+  font-size: 3.25em;
+  font-weight: bold;
+  color: rgb(82, 82, 82);
+  margin-bottom: 1rem;
+  width: 80%;
+}
+
+.banner p {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: rgb(82, 82, 82);
+  margin-bottom: 2rem;
+  width: 70%;
+}
+.banner .info a {
+  background: rgb(102, 102, 102);
+  text-decoration: none;
+  color: rgb(240, 240, 240);
+  text-align: center;
+  display: block;
+  margin-bottom: 32px;
+  width: 70%;
+}
+
+.banner .button {
+    background-color: rgb(244, 244, 244);
+    color: rgb(55, 55, 55);
+    font-size: 1.2rem;
+    padding: 10px;
+    text-align: center;
+    transition: background-color 300ms linear 0ms;
+}
+
+.banner .button:hover {
+    background-color: rgb(55, 55, 55);
+}
+
+/* Main info */
+
+.main {
+  display: flex;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+}
+
+.main .information {
+  margin: 32px 24px 32px 24px;
+  width: 60%;
+}
+
+.information img {
+  width: 100%;
+  height: auto;
+}
+
+.support h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-top: 1.75rem;
+  margin-bottom: 2rem;
+}
+
+.support h5 {
+  font-size: 0.875rem;
+  font-weight: 400;
+  margin-top: 1.5rem;
+}
+
+.information .support{
+  color: rgb(93, 93, 93);
+}
+
+.column {
+  border-left: 1px solid lightgray;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 423px;
+  padding-top: 16px;
+  padding-bottom: 32px;
+  width: 40%;
+}
+
+.main .mobile {
+  display: none;
+}
+
+.column .desktop {
+  width: 35%;
+  height: 35%;
+  padding: 1rem;
+}
+
+.column img {
+  height: auto;
+  width: auto;
+}
+.description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  line-height: 1.1;
+  color: rgb(93, 93, 93)
+}
+
+.description h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: rgb(93, 93, 93)
+}
+
+.description p {
+  margin-bottom: 2rem;
+  line-height: 1.2;
+  color: rgb(93, 93, 93)
+}
+
+.orientation, .campus, .lecture {
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1px solid lightgray;
+  transition: color 500ms linear 0;
+}
+
+.lecture:hover {
+  background-color: rgb(240, 240, 240);
+}
+
+.orientation:hover {
+  background-color: rgb(240, 240, 240);
+}
+
+.campus:hover {
+  background-color: rgb(240, 240, 240);
+}
+
+.lecture {
+  border: none;
+}
+
+/* learning blocks */
+
+.learning-container {
+  background-color: rgb(240, 240, 240);
+  color: color: rgb(93, 93, 93);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.learning-mobile {
+  display: none;
+}
+
+.learning-header h1{
+  font-size: 2rem;
+  font-weight: bold;
+  padding-top: 2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.learning-blocks {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.block {
+    font-size: 1rem;
+    background-color: rgb(244, 244, 244);
+    color: rgb(55, 55, 55);
+    width: 25%;
+    margin: 1rem;
+    transition: background-color 500ms linear 0ms;
+}
+
+.block:hover {
+    background-color: rgb(224, 224, 224);
+}
+
+.block img {
+    width: 100%;
+}
+
+.block h4 {
+    margin-left: 1.5rem;
+    margin-top: 1rem;
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.block p {
+  margin-left: 1.5rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+/* Thesis */
+
+.thesis {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: rgb(244, 244, 244);
+}
+
+.thesis-head h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    color: rgb(55, 55, 55);
+}
+
+.thesis-middle {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.thesis-middle-left {
+    width: 60%;
+    margin: 1.5rem 0 1.5rem 1.5rem;
+}
+
+video {
+    width: 90%;
+}
+
+.thesis-middle-right {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-top: 0.5rem;
+}
+
+.fisma {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 95%;
+    height: 168px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: rgb(244, 244, 244);
+    color: rgb(55, 55, 55);
+    border: 1px solid rgb(224, 224, 224);
+    transition: background-color 300ms linear 0ms;
+}
+
+.fisma:hover {
+    background-color: rgb(224, 224, 224);
+}
+
+.fisma img {
+    margin: 1rem;
+    width: 35%;
+}
+
+.fisma h4 {
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin: 1rem;
+}
+
+.fisma h5 {
+    font-size: 1rem;
+}
+
+.now-then {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 95%;
+    height: 168px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: rgb(244, 244, 244);
+    color: rgb(55, 55, 55);
+    border: 1px solid rgb(224, 224, 224);
+    transition: background-color 300ms linear 0ms;
+}
+
+.now-then:hover {
+    background-color: rgb(224, 224, 224);
+}
+
+.now-then img {
+    margin: 1rem;
+    width: 35%;
+}
+
+.now-then h4 {
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin: 1rem;
+}
+
+.now-then h5 {
+    font-size: 1rem;
+}
+
+.thesis-foot h4 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 1rem;
+}
+
+.thesis-foot {
+    width: 60%;
+    align-self: flex-start;
+}
+
+.thesis-foot h5 {
+    font-size: 1rem;
+    margin: 1rem;
+    margin-bottom: 2rem;
+}
+
+
+/* Footer Styles */
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-top: 1px solid rgb(224, 224, 224);
+    background-color: rgb(244, 244, 244);
+    color: rgb(55, 55, 55);
+}
+
+#copyright {
+    margin: 1rem;
+}
+
+#foot {
+    margin: 1rem;
+}
+
+#foot span {
+    padding: 0.5rem;
+    transition: color 500ms linear 0ms;
+}
+
+#foot span a:hover {
+    color: rgb(192, 178, 131);
+}
+
+/* media mobile */
+
+@media only screen and (max-width: 540px) {
+  .logo {
+    display: none;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .header-mobile{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 64px;
+  }
+
+  .banner {
+    flex: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .banner img {
+    display: none;
+  }
+
+.banner .info {
+    margin-top: 4rem;
+    margin-left: 1.5rem;
+    width: 100%;
+  }
+
+  .banner h1 {
+    font-size: 2.7rem;
+  }
+
+  .banner .info .button {
+    align-items: center;
+    align-content: center;
+    width: 70%
+  }
+
+  /* -- main -- */
+
+  .main .information {
+    display: none;
+  }
+  .lecture:hover,
+  .orientation:hover,
+  .campus:hover, {
+    display: none;
+  }
+
+  .column {
+    display: none;
+  }
+
+  .column .description{
+    display: none;
+  }
+
+  .main .mobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 1rem;
+    width: 90%;
+    height: 90%;
+  }
+  .main .mobile h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+    margin-left: 1rem;
+    color: rgb(93, 93, 93)
+  }
+
+  .main .mobile p {
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+    line-height: 1.2;
+    color: rgb(93, 93, 93)
+  }
+
+  .main .mobile p a {
+    padding-bottom: 1.5rem;
+  }
+
+  .main .mobile img {
+    margin: 1rem;
+    width: 90%;
+    height: auto;
+  }
+
+  /* -- course -- */
+
+  .learning-blocks {
+    display: none;
+  }
+
+.learning-container {
+  background-color: rgb(255, 255, 255);
+    border-top: 1px solid lightgray;
+}
+.learning-header {
+  padding-top: 24px;
+  display: flex;
+  color: rgb(104,104,104);
+}
+
+.learning-mobile {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    padding-bottom: 32px;
+    border-bottom: 1px sold lightgray;
+  }
+
+  h4 #title {
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+
+  .block-mobile {
+    width: 100%;
+    background-color: rgb(102, 102, 102);
+    color: rgb(240, 240, 240);
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 20px 10px;
+    margin: 0.25rem 0 0.25rem 0;
+    transition: background-color 300ms linear 0ms;
+     }
+  .block-mobile:hover {
+   background-color: rgb(55, 55, 55);
+   }
+
+   /* -- Thesis -- */
+
+  .thesis {
+     margin-bottom: 1rem;
+     background-color: rgb(255, 255, 255);
+     border-top: 1px solid lightgray;
+     padding-top: 1rem;
+   }
+   .thesis-middle-left {
+     width: 100%;
+     margin: auto;
+   }
+
+   video {
+     width: 100%;
+   }
+
+   .thesis-middle-right {
+     display: none;
+   }
+
+   .thesis-foot {
+     display: none;
+   }
+
+   /* Footer Styles */
+   #copyright {
+    width: 100%;
+  }
+
+  #foot {
+    display: none;
+  }
+}
