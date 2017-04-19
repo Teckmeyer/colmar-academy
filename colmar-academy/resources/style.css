@@ -2,7 +2,7 @@
 
 html {
   font-size: 16px;
-  font-family: 'Alegreya Sans', sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 body {
@@ -53,7 +53,7 @@ header {
 }
 
 #logo-text span {
-  color: rgb(104, 104, 84);
+  color: rgb(93, 93, 93);
   font-weight: 400;
 }
 
@@ -103,16 +103,16 @@ nav {
 }
 
 .banner h1 {
-  font-size: 3.25em;
+  font-size: 3rem;
   font-weight: bold;
   color: rgb(82, 82, 82);
-  margin-bottom: 1rem;
+  margin-bottom: 1.35rem;
   width: 80%;
 }
 
 .banner p {
   font-size: 1.5em;
-  font-weight: bold;
+  font-weight: 500;
   color: rgb(82, 82, 82);
   margin-bottom: 2rem;
   width: 70%;
@@ -131,7 +131,7 @@ nav {
     background-color: rgb(244, 244, 244);
     color: rgb(55, 55, 55);
     font-size: 1.2rem;
-    padding: 10px;
+    padding: 1rem;
     text-align: center;
     transition: background-color 300ms linear 0ms;
 }
@@ -200,6 +200,7 @@ nav {
   height: auto;
   width: auto;
 }
+
 .description {
   display: flex;
   flex-direction: column;
@@ -225,8 +226,8 @@ nav {
 .orientation, .campus, .lecture {
   display: flex;
   flex-direction: row;
-  border-bottom: 1px solid lightgray;
-  transition: color 500ms linear 0;
+  border-bottom: 1px solid rgb(224, 224, 224);
+  transition: background-color 500ms linear 0;
 }
 
 .lecture:hover {
@@ -249,7 +250,7 @@ nav {
 
 .learning-container {
   background-color: rgb(240, 240, 240);
-  color: color: rgb(93, 93, 93);
+  color: rgb(93, 93, 93);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -261,7 +262,8 @@ nav {
 }
 
 .learning-header h1{
-  font-size: 2rem;
+  font-size: 2.5rem;
+  color: rgb(55, 55, 55);
   font-weight: bold;
   padding-top: 2rem;
   margin-bottom: 2rem;
@@ -303,6 +305,7 @@ nav {
   margin-left: 1.5rem;
   margin-top: 1rem;
   margin-bottom: 1rem;
+  color: rgb(93, 93, 93);
 }
 
 /* Thesis */
@@ -316,7 +319,7 @@ nav {
 }
 
 .thesis-head h2 {
-    font-size: 2rem;
+    font-size: 2.5rem;
     font-weight: bold;
     margin-top: 1rem;
     margin-bottom: 1rem;
@@ -354,12 +357,11 @@ video {
     width: 95%;
     height: 168px;
     margin-top: 1rem;
-    margin-bottom: 1rem;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    margin-bottom: 0;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
     background-color: rgb(244, 244, 244);
     color: rgb(55, 55, 55);
-    border: 1px solid rgb(224, 224, 224);
     transition: background-color 300ms linear 0ms;
 }
 
@@ -380,6 +382,8 @@ video {
 
 .fisma h5 {
     font-size: 1rem;
+    margin-left: 1rem;
+    color: rgb(93, 93, 93);
 }
 
 .now-then {
@@ -388,13 +392,12 @@ video {
     align-items: center;
     width: 95%;
     height: 168px;
-    margin-top: 1rem;
+    margin-top: 0;
     margin-bottom: 1rem;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
     background-color: rgb(244, 244, 244);
     color: rgb(55, 55, 55);
-    border: 1px solid rgb(224, 224, 224);
     transition: background-color 300ms linear 0ms;
 }
 
@@ -415,12 +418,15 @@ video {
 
 .now-then h5 {
     font-size: 1rem;
+    margin-left: 1rem;
+    color: rgb(93, 93, 93);
 }
 
 .thesis-foot h4 {
     font-size: 1.5rem;
     font-weight: bold;
     margin: 1rem;
+    color: rgb(93, 93, 93);
 }
 
 .thesis-foot {
@@ -432,6 +438,7 @@ video {
     font-size: 1rem;
     margin: 1rem;
     margin-bottom: 2rem;
+    color: rgb(93, 93, 93)
 }
 
 
@@ -460,7 +467,7 @@ video {
 }
 
 #foot span a:hover {
-    color: rgb(192, 178, 131);
+    color: rgb(55, 55, 55);
 }
 
 /* media mobile */
